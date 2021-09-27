@@ -11,11 +11,6 @@ pipeline {
             steps {
               sh 'py.test --cov-report xml:coverage.xml --cov=. --junitxml=result.xml'
               }
-            post {
-              always {
-                 junit 'test-reports/*.xml'
-               }
-            }    
         }
     }
 }
