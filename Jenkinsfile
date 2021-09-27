@@ -9,7 +9,8 @@ pipeline {
      stage('Test Application') {
     
             steps {
-              sh 'python test.py --cov-report xml:coverage.xml --cov=. --junitxml=result.xml'
+              sh 'python py.test --cov-report xml:coverage.xml --cov=. --junitxml=result.xml'
+              sh 'python test.py'
               }
         }
     }
