@@ -1,7 +1,7 @@
 pipeline {
    agent {
      docker {
-        image 'rohit1015/flasksonar:v2'
+        image 'rohit1015/flasksonar:v3'
         }
      }
   stages {
