@@ -1,7 +1,7 @@
 import asyncio
 import time
 from random import randint
-import httpx
+import http
 from flask import Flask
 
 
