@@ -19,7 +19,7 @@ pipeline {
      stage("Code Analysis"){
           agent any
           steps {
-            sh 'docker run --rm --net=host -v /var/lib/jenkins/workspace/Jobnew:/sonarqube-flask sonarsource/sonar-scanner-cli sonar-scanner -Dsonar.projectKey=sonarqube-flask'
+            sh 'docker run --rm --net=host -v /var/lib/jenkins/workspace/Jobnew:/usr sonarsource/sonar-scanner-cli sonar-scanner -Dsonar.projectKey=sonarqube-flask'
             }
       
          }
